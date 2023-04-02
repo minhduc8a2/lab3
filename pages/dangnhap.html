@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <link
+      rel="shortcut icon"
+      href="../data/images/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../data/images/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Đăng Nhập</title>
+  </head>
+  <body>
+    <header>
+      <a href="../trangchu.html">
+        <img src="../data/images/logo.png" alt="" id="logo" />
+      </a>
+      <img
+        src="../data/images/header-img1.png"
+        alt="  "
+        class="header__img header__img--1"
+      />
+      <img
+        src="../data/images/header-img2.png"
+        alt="  "
+        class="header__img header__img--2"
+      />
+      <img
+        src="../data/images/header-img3.png"
+        alt="  "
+        class="header__img header__img--3"
+      />
+      <nav>
+        <div class="nav__link">
+          <a href="../trangchu.html">Trang Chủ</a>
+          <a href="./gioithieu.html">Giới Thiệu</a>
+          <a href="./sanpham.html">Sản Phẩm</a
+          ><a href="./tintuc.html">Tin Tức</a
+          ><a href="./dangnhap.html">Đăng Nhập</a
+          ><a href="./dangky.html">Đăng Ký</a>
+          <a href="./lienhe.html">Liên Hệ</a>
+        </div>
+        <div class="nav__search">
+          <input type=" text" class="nav__input" />
+          <i class="fa-solid fa-magnifying-glass nav__search-icon"></i>
+          <i class="fa-solid fa-cart-shopping nav__cart"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <article>
+        <form
+          action=""
+          method="post"
+          enctype=" application/x-www-form-urlencoded"
+          class="signInForm"
+          onsubmit="()=>{this.checkValidity();}"
+        >
+          <fieldset>
+            <legend><h1>ĐĂNG NHẬP</h1></legend>
+            <table>
+              <tr>
+                <td colspan="2">
+                  <img src="../data/images/dangnhap/userlogin.png" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Nhập email"
+                    name="email"
+                    required
+                    pattern="^[a-
+                    zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="password">Mật Khẩu</label></td>
+                <td>
+                  <input
+                    type="password"
+                    id="password"
+                    name="psw"
+                    placeholder="Nhập mật khẩu"
+                    minlength="8"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <input type="submit" value="Đăng nhập" />
+                  <input type="reset" value="Hủy" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  Bạn quên
+                  <a href="">Mật Khẩu?</a>
+                  <input type="checkbox" name="remember" />
+                  Ghi nhớ cho lần đăng nhập sau
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <footer>
+      @ Bản quyền thuộc về FreezeVN 2023.
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#top"><div class="top"></div></a>
+    </footer>
+  </body>
+</html>
